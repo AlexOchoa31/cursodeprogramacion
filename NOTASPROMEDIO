@@ -1,0 +1,19 @@
+ int main(){
+
+   int nota;
+   int acumNota = 0;
+   float promedioNotas;
+
+ for(int i = 1;i>=4;i++){
+    printf (" El valor del indice i es : %d \n",i);
+    printf (" Ingrese la nota del alunmo %d \n",i);
+    scanf ("%d", &nota);
+    acumNota = acumNota + nota ;
+}
+
+    promedioNotas = acumNota/4;
+    printf ("El promedio de las cuatro notas ingresadas es: %.1f",promedioNotas);
+
+    
+return 0;
+}
