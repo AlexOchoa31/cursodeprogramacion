@@ -94,41 +94,5 @@ int main (){
 
        }
 
-
-    }
-
-
-
-    precioFinal =cantRemera*2500+cantCampera*8000+cantCalza*3000+cantJean*5000+cantPollera*3500;
-
-      cant=cantRemera+cantCampera+cantCalza+cantJean+cantPollera;
-
-    printf ("\n\nINGRESE SU UBICACION : ");
-    printf("\nx1:");
-    scanf ("%d",&x1);
-    printf("\ny1:");
-    scanf ("%d",&y1);
-
-   dist= pow(pow(posx2-x1,2)+pow(posy2-y1,2),0.5);
-    precioDeEnvio=dist*120;
-
-     printf("\nEL PRECIO DE ENVIO ES DE :%.2f",precioDeEnvio);
-
-
-
-
-    if (cant >=5){
-
-        precioConDescuento=precioFinal-0.25*precioFinal;
-
-        printf ("\n\nEL PRECIO FINAL CON DESCUENTO: %.2f\n\n\n", precioConDescuento);
-
-       }
-       else
-       {
-         printf ("\n\nEL PRECIO FINAL ES DE: %d\n\n\n", precioFinal);
-
-       }
-
 }
 
