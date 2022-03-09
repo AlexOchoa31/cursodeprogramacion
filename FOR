@@ -1,0 +1,134 @@
+int main (){
+
+    int cantRemera,cantCampera,cantCalza,cantJean,cantPollera;
+    int precioFinal;
+    float precioConDescuento;
+    int cant;
+    float dist;
+    float precioDeEnvio;
+    int posx2= 2;
+    int posy2= 3;
+    int x1;
+    int y1;
+    int ingreseUnPedido;
+
+    printf("********************************\n");
+    printf("*PRODUCTO             *PRECIO  *\n");
+    printf("*REMERA               *$2500   *\n");
+    printf("*CAMPERA              *$8000   *\n");
+    printf("*CALZAS               *$3000   *\n");
+    printf("*JEAN                 *$5000   *\n");
+    printf("*POLLERAS             *$3500   *\n");
+    printf("********************************\n");
+
+    printf ("\n\nINGRESE LA CANTIDAD DE  REMERA QUE DESEA COMPRAR: ");
+    scanf ("%d", &cantRemera);
+
+    printf ("\n\nINGRESE LA CANTIDAD DE CAMPERA QUE DESEA COMPRAR: ");
+    scanf ("%d", &cantCampera);
+
+    printf ("\n\nINGRESE LA CANTIDAD DE CALZAS QUE DESEA COMPRAR: ");
+    scanf ("%d", &cantCalza);
+
+    printf ("\n\nINGRESE LA CANTIDAD DE JEANS QUE DESEA COMPRAR: ");
+    scanf ("%d", &cantJean);
+
+    printf ("\n\nINGRESE LA CANTIDAD DE POLLERAS QUE DESEA COMPRAR: ");
+    scanf ("%d", &cantPollera);
+
+
+    for (int i =1;i<=2;i++){
+
+    printf("********************************\n");
+    printf("*PRODUCTO             *PRECIO  *\n");
+    printf("*REMERA               *$2500   *\n");
+    printf("*CAMPERA              *$8000   *\n");
+    printf("*CALZAS               *$3000   *\n");
+    printf("*JEAN                 *$5000   *\n");
+    printf("*POLLERAS             *$3500   *\n");
+    printf("********************************\n");
+
+    printf ("\n\nINGRESE LA CANTIDAD DE  REMERA QUE DESEA COMPRAR: ");
+    scanf ("%d", &cantRemera);
+
+    printf ("\n\nINGRESE LA CANTIDAD DE CAMPERA QUE DESEA COMPRAR: ");
+    scanf ("%d", &cantCampera);
+
+    printf ("\n\nINGRESE LA CANTIDAD DE CALZAS QUE DESEA COMPRAR: ");
+    scanf ("%d", &cantCalza);
+
+    printf ("\n\nINGRESE LA CANTIDAD DE JEANS QUE DESEA COMPRAR: ");
+    scanf ("%d", &cantJean);
+
+    printf ("\n\nINGRESE LA CANTIDAD DE POLLERAS QUE DESEA COMPRAR: ");
+    scanf ("%d", &cantPollera);
+
+ precioFinal =cantRemera*2500+cantCampera*8000+cantCalza*3000+cantJean*5000+cantPollera*3500;
+
+      cant=cantRemera+cantCampera+cantCalza+cantJean+cantPollera;
+
+    printf ("\n\nINGRESE SU UBICACION : ");
+    printf("\nx1:");
+    scanf ("%d",&x1);
+    printf("\ny1:");
+    scanf ("%d",&y1);
+
+   dist= pow(pow(posx2-x1,2)+pow(posy2-y1,2),0.5);
+    precioDeEnvio=dist*120;
+
+     printf("\nEL PRECIO DE ENVIO ES DE :%.2f",precioDeEnvio);
+
+
+
+
+    if (cant >=5){
+
+        precioConDescuento=precioFinal-0.25*precioFinal;
+
+        printf ("\n\nEL PRECIO FINAL CON DESCUENTO: %.2f\n\n\n", precioConDescuento);
+
+       }
+       else
+       {
+         printf ("\n\nEL PRECIO FINAL ES DE: %d\n\n\n", precioFinal);
+
+       }
+
+
+    }
+
+
+
+    precioFinal =cantRemera*2500+cantCampera*8000+cantCalza*3000+cantJean*5000+cantPollera*3500;
+
+      cant=cantRemera+cantCampera+cantCalza+cantJean+cantPollera;
+
+    printf ("\n\nINGRESE SU UBICACION : ");
+    printf("\nx1:");
+    scanf ("%d",&x1);
+    printf("\ny1:");
+    scanf ("%d",&y1);
+
+   dist= pow(pow(posx2-x1,2)+pow(posy2-y1,2),0.5);
+    precioDeEnvio=dist*120;
+
+     printf("\nEL PRECIO DE ENVIO ES DE :%.2f",precioDeEnvio);
+
+
+
+
+    if (cant >=5){
+
+        precioConDescuento=precioFinal-0.25*precioFinal;
+
+        printf ("\n\nEL PRECIO FINAL CON DESCUENTO: %.2f\n\n\n", precioConDescuento);
+
+       }
+       else
+       {
+         printf ("\n\nEL PRECIO FINAL ES DE: %d\n\n\n", precioFinal);
+
+       }
+
+}
+
