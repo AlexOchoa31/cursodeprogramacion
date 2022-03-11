@@ -1,0 +1,33 @@
+#include<stdio.h>
+float promedio (float nota1, float nota2, float nota3);
+int main (){
+ float nota1, nota2, nota3;
+ for (int i=1; i<=3; i ++){
+ printf ("ingrese la nota del primer trimestre: \n");
+ scanf ("%f", &nota1);
+
+ printf ("ingrese la nota del segundo trimestre: \n");
+ scanf ("%f", &nota2);
+
+ printf ("ingrese la nota del tercer trimestre: \n");
+ scanf ("%f", &nota3);
+
+ if ((nota1 >=6)&& (nota2>=6) && (nota3>=6)){
+    printf("ESTE ALUMNO APROBO\n");
+ } else
+ {
+     printf("ESTE ALUMNO NO APROBO\n");
+ }
+  float promedioc =  promedio(nota1, nota2, nota3);
+  printf ("su promedio es de %.2f", promedioc);
+}
+return 0;
+
+}
+
+float promedio(float nota1, float nota2, float nota3){
+
+float promedio = (nota1 + nota2 + nota3)/3;
+
+return promedio;
+}
