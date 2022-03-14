@@ -1,0 +1,56 @@
+#include <stdio.h>
+void sumarComplejos(int a, int b, int c, int d);
+void restarComplejos(int a, int b, int c, int d);
+void multiplicarComplejos(int a, int b, int c, int d);
+void dividirComplejos(int a, int b, int c, int d);
+
+int main() {
+  int a,b;
+  int c,d;
+  int s1,s2;
+  
+  
+
+  printf("INGRESE UN NUMERO COMPLEJO\n");
+  printf("INGRESE LA PARTE REAL:");
+  scanf("%d",&a);
+  printf("INGRESE LA PARTE IMAGINARIA : ");
+  scanf("%d",&b);
+
+  printf("INGRESE UN NUMERO COMPLEJO\n");
+  printf("INGRESE LA PARTE REAL:");
+  scanf("%d",&c);
+  printf("INGRESE LA PARTE IMAGINARIA : ");
+  scanf("%d",&d);
+
+  dividirComplejos(a,b,c,d);
+  
+return 0;
+  }
+void sumarComplejos(int a, int b, int c, int d){
+  int sum1 = a + c;
+  int sum2 = b + d;
+  printf("El numero complejo que me queda al sumar es :  \n");
+  printf("%d + %di" ,sum1,sum2);
+}
+void restarComplejos(int a, int b, int c, int d){
+  int sum1 = a - c;
+  int sum2 = b - d;
+  printf("El numero complejo que me queda al restar es :  \n");
+  printf("%d + (%di)" ,sum1,sum2);
+    
+}
+
+void multiplicarComplejos(int a, int b, int c, int d){
+  int produc1 = a*c - b*d;
+  int produc2 = a*d + b*c;
+  printf("El numero complejo que me queda al multiplicar es :  \n");
+  printf("%d + %di" ,produc1,produc2);}  
+
+void dividirComplejos(int a, int b, int c, int d){
+  float div1 = (a*c + b*d)/(pow(c,2)+pow(d,2));
+  float div2 = (b*c - a*d)/(pow(c,2)+pow(d,2));
+  printf("El numero complejo que me queda al dividir es :  \n");
+  printf("%.2f + %.2f" ,div1,div2);
+    
+}  
